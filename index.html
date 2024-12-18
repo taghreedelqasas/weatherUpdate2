@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link   rel="stylesheet" href="all.min.css" /> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link   rel="stylesheet" href="font-awesome.min.css" /> 
+    <link   rel="stylesheet" href="bootstrap.min.css" /> 
+    <link   rel="stylesheet" href="index.css"/>
+ 
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg  py-5">
+        <div class="container">
+          <a class="navbar-brand  d-flex "  href="#">
+            <img src="logo@2x.png" style="width: 64pxx;height: 38px;" />
+            <div class="logo-name  d-flex justify-content-around  flex-column  ms-3">
+               <h1 class="logo-type" >Weather</h1>
+               <span class="small-logo" >tagline goes here </span>
+            </div>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item  navactive ">
+                <a class="nav-link active  " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+   <div class="hero " >
+    <div class="container">
+       <form class=" rounded-5  p-1   d-flex">
+        <input type="text" class=" inputElemet  border-0 bg-transparent text-white ps-3" placeholder="Find your location" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn ms-auto  subbtn  rounded-5  text-white " type="submit" id="submit">Find</button>
+       </form>
+
+
+    </div>
+     <div class="container  mt-5 d-flex">
+         <div class="row  w-100   d-flex     ">
+            <div class="col-md-4  d-flex flex-column  current">
+                <!-- <div class="inner flex-grow-1 ">
+                     <div class="titleofday  d-flex justify-content-between  py-2 px-2">
+                        <span>Tuesday</span>
+                        <span>17December</span>
+                     </div>
+                     <div class="temp  px-3 py-4">
+                        <h3 class="city">Cairo</h3>
+                        <h2 class="text-white  temparture">14.1oC</h2>
+                        <img  src="images/113.png"  width="90px"/>
+                        <h5 class="clear" >Clear</h5>
+                         <div class="details d-flex  ">
+                            <div class="percentage  me-4">
+                                <img src="images/icon-umberella.png"/><span class="ms-2">20%</span>
+                             </div>
+                             <div class="percentage me-4">
+                                <img src="images/icon-wind.png"/><span class="ms-2">18km/h</span>
+                             </div>
+                             <div class="percentage me-4">
+                                <img src="images/icon-compass.png"/><span class="ms-2">East</span>
+                             </div>
+                         </div>
+                     </div>
+                </div> -->
+               
+
+            </div>
+            <div class="col-md-4  d-flex flex-column  tomorrowcontain ">
+                <!-- <div class="inner  tomorrow   flex-grow-1  text-center">
+                     <div class="titleofday  tomorrowday  text-center py-2 px-2">
+                        <span>Tuesday</span>
+                        
+                     </div>
+                     <div class="  px-3 py-5   degree">
+                            <img  src="images/113 (1).png" width="50px" class="m-auto"/>
+                            <h3 class="text-white">21.4oC</h3>
+                            <h6>12.4o</h6>
+                            <h5 class="clear" >sunny</h5>
+                            
+
+
+                     
+                         </div>
+                     </div> -->
+                </div>
+            <div class="col-md-4 d-flex flex-column  thirdDay ">
+                <!-- <div class="inner  temp  flex-grow-1  text-center   " >
+                     <div class="titleofday  text-center py-2 px-2">
+                        <span>Tuesday</span>
+                        
+                     </div>
+                     <div class="  px-3 py-5   degree ">
+                            <img  src="images/113 (1).png" width="50px" class="m-auto"/>
+                            <h3 class="text-white">21.4oC</h3>
+                            <h6>12.4o</h6>
+                            <h5 class="clear" >sunny</h5>
+                            
+
+
+                     
+                         </div>
+                     </div> -->
+                </div>
+               
+
+            </div>
+         </div>
+     </div>
+   </div>
+
+      <div class=" footer ">
+      <div class="container  contain">
+          
+            
+              <div class=" foot  rounded-5  p-1   ">
+                <input type="text" class="    footInput   border-0 bg-transparent text-white ps-3" placeholder="Enter your email to Subscribe" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn ms-auto  subbtn  rounded-5  text-white " type="email" id="email">Subscribe</button>
+      
+               </div>
+           
+               <div class="social  ">
+                <i class="fa-brands fa-facebook-f" ></i>
+                <i class="fa-brands fa-twitter" ></i>
+                <i class="fa-brands fa-google-plus-g" ></i>
+                <i class="fa-brands fa-pinterest" ></i>
+               </div>
+             
+      </div>
+           
+           
+          <p class="py-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+
+      
+  <script  src="index.js" ></script>
+    <script  src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
